@@ -9,11 +9,11 @@
 
 <div ng-controller="TodoController">
 <ul>
-  <li ng-repeat="item in list">{{item}}</li>
+  <li ng-repeat="item in list" ng-click="remove(item);">{{item}}</li>
 </ul>
   <h1>{{title}}</h1>
-  <form ng-submit="addItem">
-    <input type="text" ng-model="title">
+  <form ng-submit="addItem(newItem);">
+    <input type="text" ng-model="newItem">
   </form>
 </div>
 
