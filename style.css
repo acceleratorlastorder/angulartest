@@ -5,7 +5,14 @@ animation-duration: 1.5s; /* temps de l'animation (4s) */
 animation-iteration-count: infinite; /* nombre de boucles (infinie) */
 animation-timing-function: linear; /* accelération de l'animation (constant) */
 }
-
+input{
+  margin-bottom: 3px;
+}
+.clearbutton{
+  background-color: rgba(50, 52, 44, 0.9);
+  border: 1px solid black;
+  border-radius: 13%;
+}
 
 @keyframes anim {
 50% {color: rgba(255, 40, 64, 0.8);}

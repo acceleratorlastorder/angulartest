@@ -13,7 +13,7 @@
         <form ng-submit="addItem(newItem);">
             <input type="text" placeholder="enter a text to add" ng-model="newItem">
         </form>
-        <span type="button" ng-click="deleteAll()">Clear the {{title}}</span>
+        <span class="clearbutton" type="button" ng-click="deleteAll()">Clear the {{title}}</span>
         <ul>
             <li class="list" ng-repeat="item in list" ng-click="removeItem($index)">{{item}}</li>
         </ul>
