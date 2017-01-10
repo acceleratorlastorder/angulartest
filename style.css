@@ -1,6 +1,7 @@
 .list:hover{
+cursor: pointer;
 animation-name: anim;
-animation-duration: 2s; /* temps de l'animation (4s) */
+animation-duration: 1.5s; /* temps de l'animation (4s) */
 animation-iteration-count: infinite; /* nombre de boucles (infinie) */
 animation-timing-function: linear; /* accelération de l'animation (constant) */
 }

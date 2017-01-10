@@ -9,7 +9,7 @@
 
 <div ng-controller="TodoController">
 <ul>
-  <li class="list" ng-repeat="item in list" ng-click="remove(item);">{{item}}</li>
+  <li class="list" ng-repeat="item in list" ng-click="removeItem($index)">{{item}}</li>
 </ul>
   <h1>{{title}}</h1>
   <form ng-submit="addItem(newItem);">
