@@ -13,8 +13,9 @@
         <form ng-submit="addItem(newItem);">
             <input type="text" placeholder="enter a text to add" ng-model="newItem">
         </form>
+        <span type="button" ng-click="removeItem(&index)"></span>
         <ul>
-            <li class="list" ng-repeat="item in list" ng-click="removeItem($index)">{{item}}</li>
+            <li class="list" ng-repeat="item in list" ng-click="removeItem(index)">{{item}}</li>
         </ul>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js" charset="utf-8"></script>
