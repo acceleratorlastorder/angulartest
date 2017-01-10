@@ -1,14 +1,15 @@
 .list:hover{
 cursor: pointer;
 animation-name: anim;
-animation-duration: 1.5s; /* temps de l'animation (4s) */
-animation-iteration-count: infinite; /* nombre de boucles (infinie) */
-animation-timing-function: linear; /* accelération de l'animation (constant) */
+animation-duration: 1.5s; 
+animation-iteration-count: infinite; 
+animation-timing-function: linear; 
 }
 input{
   margin-bottom: 3px;
 }
 .clearbutton{
+  cursor: pointer;
   background-color: rgba(50, 52, 44, 0.9);
   border: 1px solid black;
   border-radius: 13%;
