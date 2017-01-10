@@ -15,7 +15,7 @@
         </form>
         <span class="clearbutton" type="button" ng-click="deleteAll()">Clear the {{title}}</span>
         <ul>
-            <li class="list" ng-repeat="item in list" ng-click="removeItem($index)">{{item}}</li>
+            <li class="list" ng-repeat="item in list track by $index" ng-click="removeItem($index)">{{item}}</li>
         </ul>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js" charset="utf-8"></script>
