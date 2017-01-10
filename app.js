@@ -3,6 +3,9 @@ app.controller("TodoController", function($scope) {
     $scope.title = "Todo list";
     $scope.list = ["Eat", "Drink", "Breath", "Run", "Laugh", "Playing"];
 
+    const stringifier = localStorage.getItem("list");
+    $scope.list = JSON.parse(stringified);
+
     $scope.removeItem = function(index) {
 
         $scope.list.splice(index, 1);
