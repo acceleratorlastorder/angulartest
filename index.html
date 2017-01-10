@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html ng-app="TodoApp">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <title>angular test</title>
-  </head>
-  <body>
+</head>
 
-<div ng-controller="TodoController">
-<ul>
-  <li class="list" ng-repeat="item in list" ng-click="removeItem($index)">{{item}}</li>
-</ul>
-  <h1>{{title}}</h1>
-  <form ng-submit="addItem(newItem);">
-    <input type="text" ng-model="newItem">
-  </form>
-</div>
-
-
+<body>
+    <div ng-controller="TodoController">
+        <h1>{{title}}</h1>
+        <form ng-submit="addItem(newItem);">
+            <input type="text" placeholder="enter a text to add" ng-model="newItem">
+        </form>
+        <ul>
+            <li class="list" ng-repeat="item in list" ng-click="removeItem($index)">{{item}}</li>
+        </ul>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js" charset="utf-8"></script>
-<script src="app.js" charset="utf-8"></script>
-  </body>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
 </html>
