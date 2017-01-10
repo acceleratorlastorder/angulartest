@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div ng-controller="TodoController">
+    <div ng-controller="TodoController" ng-cloak>
         <h1>{{title}}</h1>
         <form ng-submit="addItem(newItem);">
             <input type="text" placeholder="enter a text to add" ng-model="newItem">
@@ -18,7 +18,7 @@
             <li class="list" ng-repeat="item in list track by $index" ng-click="removeItem($index)">{{item}}</li>
         </ul>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js" charset="utf-8"></script>
+    <script src="angular-1.6.1/angular.js" charset="utf-8"></script>
     <script src="app.js" charset="utf-8"></script>
 </body>
 
